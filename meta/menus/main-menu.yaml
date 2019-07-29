@@ -1,0 +1,29 @@
+name: 'Main menu'
+items:
+    -
+        title: Blog
+        type: url
+        url: /blog
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: About
+        type: url
+        url: /about
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Contact
+        type: url
+        url: /contact
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

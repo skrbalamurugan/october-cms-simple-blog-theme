@@ -1,0 +1,59 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "cms-layout"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "category"
+
+[searchForm]
+resultPage = "blog-search"
+categoryFilter = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "category"
+==
+<div class="main-header">
+    <div class="inner-main-header">
+        <h1>{{post.title}}</h1>
+    </div>
+</div>
+<div class="container main-body">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="blog-item">
+                {% set post = blogPost.post %}
+                <div class="content">{{ post.content_html|raw }}</div>
+                {% if post.featured_images.count %}
+                    <div class="featured-images text-center">
+                        {% for image in post.featured_images %}
+                            <p>
+                                <img
+                                    data-src="{{ image.filename }}"
+                                    src="{{ image.path }}"
+                                    alt="{{ image.description }}"
+                                    style="max-width: 100%" />
+                            </p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <p class="info">
+                    <hr>
+                    Posted
+                    {% if post.categories.count %} in
+                        {% for category in post.categories %}
+                            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    on {{ post.published_at|date('M d, Y') }}
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            {% partial 'site/sidebar' %}
+        </div>
+    </div>
+</div>

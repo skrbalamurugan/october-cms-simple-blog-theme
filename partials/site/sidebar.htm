@@ -1,0 +1,91 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 4
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "category"
+postPage = "blog-post"
+
+[viewBag]
+==
+<div class="sidebar-panel">
+    <div class="sidebar-panel-body">
+        <div class="about-bloger">
+            <img src="https://secure.gravatar.com/avatar/b10f7ddbf9b8be9e3c46c302bb20101d?s=400&d=mm&r=g" class="bloger-profile" alt="">
+            <div class="bloger-content">
+                Simple responsive blog template. Easily add new posts using the october cms. Easy to change design unsing the designer.
+            </div>
+            <hr>
+            <ul class="bloger-social-list">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="sidebar-panel">
+    <div class="sidebar-panel-header">
+        <h4>Search</h4>
+    </div>
+    <div class="sidebar-panel-body">
+        {% component 'searchForm' %}
+    </div>
+</div>
+<div class="sidebar-panel">
+    <div class="sidebar-panel-header">
+        <h4>Follow Us</h4>
+    </div>
+    <div class="sidebar-panel-body">
+        <ul class="social-list">
+            <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="sidebar-panel">
+    <div class="sidebar-panel-header">
+        <h4>Category</h4>
+    </div>
+    <div class="sidebar-panel-body">
+        {% component 'blogCategories' %}    
+    </div>
+</div>
+<div class="sidebar-panel">
+    <div class="sidebar-panel-header">
+        <h4>Recent Posts</h4>
+    </div>
+    <div class="sidebar-panel-body">
+        {% set posts = blogPosts.posts %}
+        {% for post in posts %}
+        <div class="recent-post">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        </ul>
+        {% else %}
+        <p>{{ noPostsMessage }}</p>
+        {% endfor %}
+    </div>
+</div>

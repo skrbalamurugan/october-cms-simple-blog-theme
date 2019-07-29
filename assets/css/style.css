@@ -1,0 +1,241 @@
+body{
+    background: #F1F1F1;
+}
+.main-body{
+    padding: 30px 20px 30px 20px;
+    background-color: #F1F1F1;
+}
+.main-header{
+    background-color: #6872e4;
+    padding: 80px 20px 50px 20px;
+    text-align:center;
+    color: #fff;
+}
+.inner-main-header{
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-header h1{
+    font-weight: 600;
+}
+a{
+    color: #6872e4;
+}
+a:hover{
+    text-decoration: none;
+}
+hr{
+    border-color: #A0A6E3;
+}
+.navbar{
+    /* border-bottom : 1px solid #C0C0C0;; */
+    border-bottom : none;
+    background-color : #6872e4 !important;
+}
+.navbar-light .navbar-brand {
+    color: #f7f9fd;
+    font-weight: 600;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f7f9fd;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+}
+.form-control{
+    border-radius: 0;
+    border-color: #6872e4;
+}
+.btn-primary{
+    background-color: #6872e4;
+    border-color: #6872e4;
+    border-radius: 0;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: #6872e4;
+}
+.category-list{
+    list-style: none;
+    display: contents;
+}
+.category-list li{
+    padding: 5px;
+    border-radius:3px;
+}
+.category-list .badge{
+    background: #ddd;
+    border-radius:3px;
+    padding:5px;
+    float: right;
+}
+.social-list{
+    list-style: none;
+    display: contents;
+    margin-top:10px;
+}
+.social-list li{
+    display: inline;
+    padding: 10px;
+    background-color: #6872e4;
+    color: #fff;
+    margin:3px;
+    text-align: center;
+}
+.social-list li a{
+    color: #fff;
+}
+.social-list li a:hover{
+    color:#EAEAEA;
+}
+
+.social-list li:last-child{
+    border-right:none;
+}
+.fab {
+    min-width: 25px;
+}
+.sidebar-panel {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    margin: 0 10px 30px 10px;
+    background-color: #F9F9F9;
+}
+.sidebar-panel-body{
+    padding:20px 10px;
+}
+.sidebar-panel-header{
+    /* border-bottom: 1px solid #6872e4; */
+    padding: 5px 5px 5px 10px;
+    border-radius: 3px 3px 0 0;
+}
+.blog-item-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.blog-item{
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #F9F9F9;
+}
+.about-bloger{
+    text-align: center;
+}
+.bloger-profile{
+    border-radius: 50%;
+    width: 70%;
+    text-align: center
+}
+.bloger-content{
+    padding:10px; 
+}
+.bloger-social-list{
+    list-style: none;
+    display: contents;
+    margin-top:10px;
+}
+.bloger-social-list li{
+    display: inline;
+    padding: 5px;
+    margin:3px;
+    text-align: center;
+    border-right: 1px solid #A0A6E3;
+}
+
+.bloger-social-list li:last-child{
+    border-right:none;
+}
+.recent-post{
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.blog-category{
+    background: #6872e4;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #eee;
+}
+.blog-category:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.footer{
+    background-color: #6872e4;
+    padding: 20px;
+    color: #eee;
+}
+
+.icon-color{
+    color: #6872e4;
+}
+.page-numbers{
+    background-color:#fff;
+    padding: 10px;
+    border: 1px solid #6872e4;
+    min-width: 50px;
+}
+.page-numbers:hover{
+    background-color :  #6872e4;
+    color: #fff;
+}
+.nav-links .active{
+    background-color :  #6872e4;
+    color: #fff;    
+}
+.prev, .next{
+    background-color :  #6872e4;
+    color: #fff;
+}
+.page-details{
+    background-color: #fff;
+    padding: 50px;
+}
+.page-details h2{
+    color: #6872e4;
+    font-weight: 600;
+}
+.about-profile{
+    width: 100%;
+    text-align: center
+}
+.about-details{
+    padding-bottom: 20px;
+
+}
+.home-header{
+    padding: 80px 50px 100px 50px;
+    background-color: #6872e4;
+    color: #fff;
+}
+h1{
+    font-weight: 600;
+}
+.home-page{
+    background-color: #fff;
+    padding: 50px;
+    min-height: 500px;
+    margin-top: -80px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+}
+.home-blog-post{
+    margin:5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+h2{
+    color: #6872e4;
+    font-weight: 600;
+}
