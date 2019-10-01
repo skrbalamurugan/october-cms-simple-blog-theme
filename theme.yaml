@@ -2,4 +2,7 @@ name: 'Simple Blog Theme'
 description: 'Simple Blog Theme'
 author: balamurugan
 homepage: 'http://bala.net.in/'
-code: ''
+code: 'Clean'
+require:
+    - RainLab.Blog
+    - Martin.Forms
